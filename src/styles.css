@@ -21,6 +21,7 @@ input {
   margin-top: 25px;
   border-radius: 4px;
   padding: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 button {
@@ -28,6 +29,7 @@ button {
   background-color: rgb(201, 229, 236);
   border-radius: 4px;
   padding: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .search-form {
