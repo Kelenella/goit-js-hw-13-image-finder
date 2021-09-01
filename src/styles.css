@@ -1,6 +1,46 @@
+body {
+  background-color: beige;
+  /* background-image: url('./images/texture.jpg'); */
+  background-size: cover;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: rgb(1, 2, 2);
+}
+
+input {
+  margin-top: 25px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+button {
+  margin-top: 25px;
+  background-color: rgb(201, 229, 236);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .gallery {
   width: 1220px;
-  margin: 0 auto;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,4 +53,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.load-more {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
 }
