@@ -1,5 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: beige;
+  background-color: rgb(220, 245, 243);
   /* background-image: url('./images/texture.jpg'); */
   background-size: cover;
 }
@@ -15,6 +25,32 @@ ul {
   margin: 0;
   list-style: none;
   color: rgb(1, 2, 2);
+}
+
+.container {
+  width: 100%;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 input {
@@ -39,23 +75,28 @@ button {
 }
 
 .gallery {
-  width: 1220px;
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 0;
-  list-style: none;
   align-items: center;
 }
 
 .stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
+.stats-item {
+  align-items: center;
+  justify-content: center;
+}
+
+.material-icons {
+  font-size: 15px;
 }
 
 .load-more {
@@ -63,4 +104,12 @@ button {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 15px;
+}
+
+.photo-card {
+  margin-bottom: 10px;
+}
+
+.photo-card:not(:last-child) {
+  margin-right: 8px;
 }
